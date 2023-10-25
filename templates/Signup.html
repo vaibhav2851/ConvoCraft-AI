@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up Form</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #ff00aa, #ff00aa, #00aaff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.8);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 80%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      width: 80%;
+      padding: 10px;
+      background: #00aaff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0088ff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Sign Up Form</h2>
+    <form method="POST" action="/register">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br >
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br>
+    <input type="submit" value="Register">
+</form>
+    <a href="Login.html">Already have an account? Login</a>
+
+    <p style="color: green;">{{mes}}</p>
+
+  </div>
+</body>
+</html>
